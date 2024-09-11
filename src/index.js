@@ -17,11 +17,11 @@ app.listen(3000, async () => {
   await connect();
   console.log("Mongodb connected");
 
-  const userrepo = new UserRepository();
-  const tweetrepo = new TweetRepository();
-  const tweets = await tweetrepo.getAll(0, 10);
-  const users = await userrepo.getAll();
+  // const userrepo = new UserRepository();
+  // const tweetrepo = new TweetRepository();
+  // const tweets = await tweetrepo.getAll(0, 10);
+  // const users = await userrepo.getAll();
 
-  const likeService = new LikeService();
-  await likeService.toggleLike(tweets[0].id, "Tweet", users[0].id);
+  // const likeService = new LikeService();
+  // await likeService.toggleLike(tweets[0].id, "Tweet", users[0].id);
 });
